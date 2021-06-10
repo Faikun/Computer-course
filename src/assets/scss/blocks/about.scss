@@ -1,0 +1,83 @@
+.about__wrapper {
+    padding: 200px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media(max-width: 600px) {
+        padding: 100px 20px;
+    }
+
+}
+
+.about__bgi,
+.about__pc {
+    position: absolute;
+}
+
+.about__pc {
+    top: 180%;
+    left: 50%;
+
+    transform: translate(-50%, -180%);
+}
+
+.about__images {
+    background: url('../images/Rectangle.png') center no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 526px;
+    height: 499px;
+
+    @media(max-width: 1200px) {
+        width: 100%;
+        order: 2;
+    }
+
+    @media(max-width: 600px) {
+        display: none;
+    }
+
+}
+
+.about__paragraph {
+    @media(max-width: 1200px) {
+        width: 80%;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    @media(max-width: 600px) {
+        width: 90%;
+    }
+}
+
+.about__info {
+    width: 50%;
+
+    @media(max-width: 1200px) {
+        width: 100%;
+    }
+}
+
+.about__title {
+    margin-bottom: 45px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+
+    @media(max-width: 1200px) {
+        text-align: center;
+    }
+
+    @media(max-width: 600px) {
+        font-size: 32px;
+    }
+}
+
+.about__text {
+    font-size: 16px;
+    line-height: 160%;
+}

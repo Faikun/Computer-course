@@ -1,0 +1,127 @@
+.course {
+    background-color: $gray;
+}
+
+.course__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-size: 16px;
+
+    @media(max-width: 1350px) {
+        padding: 0 20px;
+    }
+
+    @media(max-width: 330px) {
+        font-size: 12px;
+    }
+}
+
+.course__orderbutton {
+    margin: 43px 0;
+
+    @media(max-width: 1000px) {
+        order: 3;
+    }
+
+    @media(max-width: 500px) {
+        margin: 43px auto;
+    }
+}
+
+.course__participants {
+
+    color: $white;
+
+    &-string {
+        strong {
+            display: inline-block;
+            min-width: 200px;
+            opacity: 0.4;
+        }
+    }
+
+    @media(max-width: 1000px) {
+        order: 2;
+    }
+
+    @media(max-width: 500px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.course__earned {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 30vw;
+
+    &-participants {
+        display: flex;
+        width: 30vw;
+
+        @media(max-width: 1000px) {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+
+    &-by {
+        margin-right: 40px;
+        opacity: .4;
+    }
+
+    @media(max-width: 1000px) {
+        order: 1;
+        width: 100vw;
+    }
+
+    @media(max-width: 500px) {
+        margin-bottom: 20px;
+    }
+
+}
+
+.course__fill {
+    width: 500px;
+    height: 6px;
+    background-color: $white;
+
+    margin: 7px 0;
+
+    position: relative;
+
+    &-filled {
+        position: absolute;
+        width: 70%;
+        background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+        height: 7px;
+        animation-name: width;
+        animation-duration: 5s;
+    }
+
+    @keyframes width {
+      from {width: 0%;}
+      to {width: 70%;}
+    }
+
+    @media(max-width: 1000px) {
+        width: 100%;
+    }
+}
+
+.course__money {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    opacity: .4;
+
+    @media(max-width: 1000px) {
+        width: 90%;
+    }
+}
+

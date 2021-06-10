@@ -1,0 +1,125 @@
+.footer {
+    padding-top: 210px;
+
+    @media(max-width: 700px) {
+        padding-top: 100px;
+    }
+}
+
+.footer__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    margin-bottom: 30px;
+
+    @media(max-width: 600px) {
+        font-size: 32px;
+        text-align: center;
+    }
+}
+
+.footer__text {
+    font-size: 16px;
+    line-height: 160%;
+    opacity: .5;
+    margin-bottom: 60px;
+    max-width: 400px;
+    text-align: center;
+
+    @media(max-width: 600px) {
+        font-size: 12px;
+        padding: 0 10px;
+        text-align: center;
+    }
+}
+
+.footer__subscribe {
+    position: relative;
+    height: 40px;
+    width: 337px;
+    margin-bottom: 40px;
+
+    @media(max-width: 350px) {
+        margin-right: 30px;
+    }
+
+    @media(max-width: 300px) {
+        width: 250px;
+        margin-right: 20px;
+    }
+}
+
+.footer__input {
+    background: rgba($white, .25);
+    border-radius: 50px 0px 0px 50px;
+    height: 38.4px;
+    font-size: 12px;
+    width: 60%;
+    padding-left: 20px;
+
+    color: $white;
+
+    &::placeholder {
+        color: $white;
+        font-size: 12px;
+    }
+
+    @media(max-width: 350px) {
+        width: 50%;
+        margin-left: 35px;
+    }
+
+    @media(max-width: 300px) {
+        margin-left: 0;
+    }
+}
+
+.footer__button {
+    position: absolute;
+    left: 180px;
+
+    @media(max-width: 300px) {
+        left: 110px;
+    }
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: space-around;
+
+    @media(max-width: 300px) {
+        flex-wrap: wrap;
+    }
+}
+
+.footer__wrapper {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50%;
+    margin: 0 15px 50px;
+
+    &:hover {
+        background: linear-gradient(94.26deg, darken(#C89AFC, 20%) 9.51%, darken(#7C6AFA, 20%) 90.23%);
+    }
+
+    @media(max-width: 300px) {
+        margin: 0 40px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.footer__social {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

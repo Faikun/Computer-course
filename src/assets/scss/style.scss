@@ -1,0 +1,43 @@
+@import "vars";
+@import "vendor/reset";
+//@import "mixins";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $black;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: $white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a  {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+/* Blocks */
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/btn";
+@import "blocks/course";
+@import "blocks/background";
+@import "blocks/about";
+@import "blocks/getstarted";
+@import "blocks/benefits";
+@import "blocks/partners";
+@import "blocks/program";
+@import "blocks/teachers";
+@import "blocks/footer";
