@@ -33,7 +33,15 @@ for(let i=0; i < headerLink.length; i++) {
         var $this = e.currentTarget;
         var id = $this.getAttribute('data-scroll');
         var scrollTarget = document.getElementById(id);
-        const topOffset = document.querySelector('.header__nav').offsetHeight + 50;
+        var topOffset;
+
+        if(document.body.clientWidth <= 1000) {
+            topOffset = document.querySelector('.header__nav').offsetHeight + 20;
+        }
+        else {
+           topOffset = document.querySelector('.header__nav').offsetHeight - 50;
+        }
+
         const elementPosition = scrollTarget.getBoundingClientRect().top;
         const offsetPosition = elementPosition - topOffset;
 
@@ -42,8 +50,10 @@ for(let i=0; i < headerLink.length; i++) {
             behavior: 'smooth'
         });
 
-        navbar.style.display = "none";
-        navToggle.classList.remove('shown')
+        if(document.body.clientWidth <= 1000) {
+            navbar.style.display = "none";
+            navToggle.classList.remove('shown');
+        }
 
     });
 }
